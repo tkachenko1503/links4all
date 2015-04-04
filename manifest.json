@@ -6,19 +6,12 @@
     "version": "0.1",
 
     "permissions": [
-        "tabs", "http://*/*","webNavigation","unlimitedStorage"
+        "tabs", "http://*/*", "https://*/*","webNavigation","unlimitedStorage"
     ],
 
     "browser_action": {
         "default_icon": "resourse/share.png",
         "default_popup": "resourse/popup.html"
-    },
-
-    "content_scripts": [
-        {
-            "matches": ["http://*/*"],
-            "js": ["js/index.js"]
-        }
-    ]
+    }
 
 }

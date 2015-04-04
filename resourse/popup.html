@@ -6,18 +6,64 @@
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
+        min-width: 400px;
+        max-width: 600px;
+        padding: 10px;
       }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
+      .title {
+          margin: 0;
+          margin-bottom: 10px;
+      }
+      .action-descript {
+          font-size: 12px;
+          color: #949494;
+      }
+      .link {
+          margin: 5px 0;
+          padding: 5px;
+          font-size: 14px;
+          background: #CCEAFF;
+      }
+      .send-form {
+          margin: 5px 0;
+      }
+      .input-address {
+          margin: 10px 0 4px 0;
+      }
+      .input-address input {
+          width: 75%;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 4px;
+          border: 1px solid #DDD;
+          border-radius: 4px;
+      }
+      .input-address input:focus {
+          outline: 0;
+      }
+      .input-address button {
+          width: 20%;
+          padding: 4px;
+          background-color: #B5F1FF;
+          border-radius: 4px;
+          border: 1px solid #DDD;
       }
     </style>
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
   </head>
   <body>
-    <h2>Hello World!</h2>
+    <h2 class="title">Links4All</h2>
+    <span class="action-descript">Share this link with your friends:</span>
+    <section class="link">
+        <span id="currentUrl"></span>
+    </section>
+    <section class="send-form">
+        <form class="shareLinkForm" action="twitter/api" method="post">
+            <div class="input-address">
+                <input type="text" name="friend" value="" placeholder="Input friend name">
+                <button type="submit" name="send-message">Send</button>
+            </div>
+        </form>
+    </section>
   </body>
 </html>

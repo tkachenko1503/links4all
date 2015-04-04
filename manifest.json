@@ -9,6 +9,11 @@
         "tabs", "http://*/*","webNavigation","unlimitedStorage"
     ],
 
+    "browser_action": {
+        "default_icon": "resourse/share.png",
+        "default_popup": "resourse/popup.html"
+    },
+
     "content_scripts": [
         {
             "matches": ["http://*/*"],

@@ -6,12 +6,24 @@
     "version": "0.1",
 
     "permissions": [
-        "tabs", "http://*/*", "https://*/*","webNavigation","unlimitedStorage"
+        "webRequest",
+        "storage",
+        "activeTab",
+        "tabs",
+        "<all_urls>"
     ],
 
     "browser_action": {
         "default_icon": "resourse/share.png",
         "default_popup": "resourse/popup.html"
-    }
+    },
 
+    },
+    "background": {
+        "scripts": [
+            "chrome_ex_oauth.js",
+            "chrome_ex_oauthsimple.js",
+            "js/index.js"
+        ]
+    }
 }

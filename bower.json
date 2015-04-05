@@ -1,0 +1,19 @@
+{
+  "name": "links4all",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tkachenko1503/links4all",
+  "authors": [
+    "Tkachenko Sergey <ts1503@yandex-team.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typeahead.js": "~0.10.5"
+  }
+}
